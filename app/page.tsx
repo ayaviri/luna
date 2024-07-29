@@ -1,5 +1,3 @@
-"use client"
-import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -7,7 +5,7 @@ import background from "@/public/luna_pizza.png"
 import lunaLogo from "@/public/luna_logo.png"
 
 export default function Home() {
-  const [contactOpen, setContactOpen] = useState(false)
+  const onlineOrderingURL = process.env.ONLINE_ORDERING_URL
 
   return (
     <div className="min-h-screen relative">
@@ -30,7 +28,6 @@ export default function Home() {
           <div className="w-2/6 relative">
             <Image src={lunaLogo} alt="luna logo"/>
           </div>
-          {/* <h1 className="text-4xl md:text-6xl text-white font-serif">Luna Pizza</h1> */}
         </header>
 
         <main className="container mx-auto px-4 text-center">
@@ -39,26 +36,19 @@ export default function Home() {
           </h2>
           
           <div className="space-y-4">
-            <div className="relative inline-block text-left">
-              <button onClick={() => setContactOpen(!contactOpen)} className="text-white px-6 py-3 text-xl font-serif">
-                Contact
-              </button>
-              {contactOpen && (
-                <div className="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                  <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                    <a href="tel:+15551234567" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Takeout: (555) 123-4567</a>
-                    <a href="tel:+15559876543" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delivery: (555) 987-6543</a>
-                    <a href="mailto:info@pizzaparadise.com" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Email: info@pizzaparadise.com</a>
-                  </div>
-                </div>
-              )}
-            </div>
+            <Link href="tel:8606592135" className="text-white px-6 py-3 text-xl font-serif inline-block">
+              Call For Takeout
+            </Link>
+
+            <Link href="tel:8606595652" className="text-white px-6 py-3 text-xl font-serif inline-block">
+              Call For Delivery
+            </Link>
             
-            <Link href="#" className="text-white px-6 py-3 text-xl font-serif inline-block">
+            <Link href="/menu.pdf" className="text-white px-6 py-3 text-xl font-serif inline-block">
               View Menu
             </Link>
 
-            <Link href="#" className="text-white px-6 py-3 text-xl font-serif inline-block">
+            <Link href={onlineOrderingURL} className="text-white px-6 py-3 text-xl font-serif inline-block">
               Order Online
             </Link>
           </div>
