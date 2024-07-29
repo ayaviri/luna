@@ -1,3 +1,5 @@
+"use client"
+import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -35,22 +37,33 @@ export default function Home() {
             The Best Pizza In Glastonbury
           </h2>
           
-          <div className="space-y-4">
-            <Link href="tel:8606592135" className="text-white px-6 py-3 text-xl font-serif inline-block">
+          <div className="mt-8 text-white font-serif text-xl space-y-4 flex flex-col items-center">
+            <Link href="tel:8606592135" className="hover:underline">
               Call For Takeout
             </Link>
 
-            <Link href="tel:8606595652" className="text-white px-6 py-3 text-xl font-serif inline-block">
+            <Link href="tel:8606595652" className="hover:underline">
               Call For Delivery
             </Link>
             
-            <Link href="/menu.pdf" className="text-white px-6 py-3 text-xl font-serif inline-block">
+            <Link href="/menu.pdf" className="hover:underline">
               View Menu
             </Link>
 
-            <Link href={onlineOrderingURL || "#"} className="text-white px-6 py-3 text-xl font-serif inline-block">
+            <Link href={onlineOrderingURL || "#"} className="hover:underline">
               Order Online
             </Link>
+
+            <details>
+              <summary className="cursor-pointer">Location</summary>
+              <a href="https://maps.app.goo.gl/br3BX9L8vMH4HErk8">88 Hebron Ave, Glastonbury, CT 06033</a>
+            </details>
+            <details>
+              <summary className="cursor-pointer">Hours</summary>
+              <p>Monday - Thursday: 11:00 AM - 9:00 PM</p>
+              <p>Friday - Saturday: 11:00 AM - 10:00 PM</p>
+              <p>Sunday: 12:00 PM - 9:00 PM</p>
+            </details>
           </div>
         </main>
 
