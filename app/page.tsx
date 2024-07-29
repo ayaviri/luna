@@ -1,5 +1,3 @@
-"use client"
-import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -7,7 +5,6 @@ import background from "@/public/luna_pizza.png"
 import lunaLogo from "@/public/luna_logo.png"
 
 export default function Home() {
-  const onlineOrderingURL = process.env.ONLINE_ORDERING_URL
 
   return (
     <div className="min-h-screen relative">
@@ -50,7 +47,7 @@ export default function Home() {
               View Menu
             </Link>
 
-            <Link href={onlineOrderingURL || "#"} className="hover:underline">
+            <Link href="https://www.clover.com/online-ordering/luna-pizza-glastonbury" className="hover:underline">
               Order Online
             </Link>
 
