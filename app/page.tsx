@@ -43,17 +43,17 @@ export default function Home() {
               Call For Delivery
             </Link>
             
-            <Link href="/menu.pdf" className="hover:underline">
+            <Link href="/menu.pdf" target="_blank" className="hover:underline">
               View Menu
             </Link>
 
-            <Link href="https://www.clover.com/online-ordering/luna-pizza-glastonbury" className="hover:underline">
+            <Link href="https://www.clover.com/online-ordering/luna-pizza-glastonbury" target="_blank" className="hover:underline">
               Order Online
             </Link>
 
             <details>
               <summary className="cursor-pointer">Location</summary>
-              <a href="https://maps.app.goo.gl/br3BX9L8vMH4HErk8">88 Hebron Ave, Glastonbury, CT 06033</a>
+              <a href="https://maps.app.goo.gl/br3BX9L8vMH4HErk8" target="_blank">88 Hebron Ave, Glastonbury, CT 06033</a>
             </details>
             <details>
               <summary className="cursor-pointer">Hours</summary>
