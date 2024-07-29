@@ -48,13 +48,13 @@ export default function Home() {
               View Menu
             </Link>
 
-            <Link href={onlineOrderingURL} className="text-white px-6 py-3 text-xl font-serif inline-block">
+            <Link href={onlineOrderingURL || "#"} className="text-white px-6 py-3 text-xl font-serif inline-block">
               Order Online
             </Link>
           </div>
         </main>
 
-        <footer className="p-5 text-center text-white">
+        <footer className="p-5 text-center text-white font-serif">
           <p>© 2024 Luna Pizza. All rights reserved.</p>
         </footer>
       </div>
