@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Luna Delivery Region</name>
+    <description></description>
+    <Placemark>
+      <name>Luna Delivery Region</name>
+      <description></description>
+      <Style>
+        <LineStyle>
+          <color>ff0000ff</color>
+          <width>2</width>
+        </LineStyle>
+        <PolyStyle>
+          <color>400000ff</color>
+        </PolyStyle>
+      </Style>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -72.63413581929726, 41.742777245285964, 0
+              -72.62041904255675, 41.634859946007964, 0
+              -72.50518041494941, 41.647528427543925, 0
+              -72.45235978633627, 41.68908729523135, 0
+              -72.46784180752388, 41.7623176446304, 0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>
