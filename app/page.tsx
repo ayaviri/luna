@@ -21,6 +21,14 @@ export default function Home() {
         <Head>
           <title>Luna Pizza</title>
           <link rel="icon" href="/favicon.ico" />
+          <meta name="description" content="Enjoy the best pizza in Glastonbury at Luna Pizza. Call for takeout or delivery, view our menu, and order online." />
+          <meta name="keywords" content="Luna Pizza, Glastonbury pizza, best pizza, takeout, delivery, order online" />
+          <meta name="author" content="Luna Pizza" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta property="og:title" content="Luna Pizza | The Best Pizza In Glastonbury" />
+          <meta property="og:description" content="Enjoy the best pizza in Glastonbury at Luna Pizza. Call for takeout or delivery, view our menu, and order online." />
+          <meta property="og:image" content="/luna_logo.png" />
+          <meta property="og:url" content="https://lunaglastonbury.com" />
         </Head>
 
         <header className="p-5">
@@ -31,6 +39,10 @@ export default function Home() {
 
         <main className="container mx-auto px-4 text-center">
           <h2 className="text-5xl md:text-7xl text-white font-serif mb-8">
+            Luna Pizza
+          </h2>
+
+          <h2 className="text-3xl md:text-5xl text-white font-serif mb-8">
             The Best Pizza In Glastonbury
           </h2>
           
