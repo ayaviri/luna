@@ -51,16 +51,12 @@ export default function Home() {
               Call For Takeout
             </Link>
 
-            <Link href="tel:8606595652" className="hover:underline">
-              Call For Delivery
-            </Link>
-            
             <Link href="/menu.pdf" target="_blank" className="hover:underline">
               View Menu
             </Link>
 
             <Link href="https://www.clover.com/online-ordering/luna-pizza-glastonbury" target="_blank" className="hover:underline">
-              Order Online
+              Order Online (Takeout/Delivery)
             </Link>
 
             <details>
